@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Mochiy+Pop+One&display=swap");
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  height: 100vh;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.status-info {
+  padding-left: 30px;
+  font-size: 24px;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-board {
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Libre Baskerville", serif;
+}
+
+.game-info {
+  font-family: "Mochiy Pop One", sans-serif;
+  color: #ddd;
+
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  background: bottom;
+  color: #ddd;
+  font-family: "Mochiy Pop One", sans-serif;
+  margin-top: 5px;
+  /* border-radius: 10px; */
+}

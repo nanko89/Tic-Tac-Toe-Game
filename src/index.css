@@ -79,3 +79,23 @@ ul {
   margin-top: 5px;
   /* border-radius: 10px; */
 }
+
+@media screen and (max-width: 750px) {
+  .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 100px 0;
+  }
+
+  .game-board,
+  .game-info {
+    position: relative;
+    top: unset;
+    left: unset;
+    -webkit-transform: unset;
+    transform: unset;
+  }
+}
